@@ -33,3 +33,5 @@ pip install pyinstaller
 pyinstaller --onefile spambot.py
 ```
 If you wish to have an icon for your executable, type `pyinstaller --onefile -i icon.ico spambot.py` instead.
+
+I used [this](https://youtu.be/UZX5kH72Yx4) YouTube tutorial to help with making the EXE file.
