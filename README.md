@@ -16,3 +16,20 @@ pyautogui.press("enter")
 lines as well.
 
 I've discovered that - at least on Windows - when running from the command line, you have to run the Python script from the same folder or directory as the script. Otherwise, an error will come up, saying `FileNotFoundError: [Errno 2] No such file or directory: 'rickroll.txt'` or something along those lines.
+
+The executable file `spambot.exe` contains lyrics for the songs:
+- The periodic table song by ASAPScience
+- Waterloo Sunset by The Kinks
+- Never Gonna Give You Up by Rick Astley
+- 100 Digits of Pi by ASAPScience
+- Bohemian Rhapsody by Queen
+- Harvest Samba
+
+If you want to run the executable, make sure all the text files are in the same directory as it.
+
+However, if you would like to customise the song lyrics and make your own executable, in Windows CMD or Linux or macOS terminal type from the same directory as your script:
+```
+pip install pyinstaller
+pyinstaller --onefile spambot.py
+```
+If you wish to have an icon for your executable, type `pyinstaller --onefile -i icon.ico spambot.py` instead.
