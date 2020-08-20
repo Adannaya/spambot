@@ -13,7 +13,7 @@ print("""0: The periodic table song
 choice = int(input("Pick a number for a text to spam, which will start 5 seconds after you press enter: "))
 
 time.sleep(5)
-spamtext = open("C:\\Users\\blokk\\Desktop\\spambot\\" + spamfiles[choice] + ".txt", "r")
+spamtext = open(spamfiles[choice] + ".txt", "r") # You can use "C:\\path\\to\\files\\" for Windows or "/path/to/files/" for macOS and Linux to use an absolute path
 for line in spamtext:
     pyautogui.typewrite(line)
     pyautogui.press("enter")
