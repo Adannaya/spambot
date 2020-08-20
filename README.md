@@ -14,3 +14,5 @@ pyautogui.typewrite(endings[choice])
 pyautogui.press("enter")
 ```
 lines as well.
+
+I've discovered that - at least on Windows - when running from the command line, you have to run the Python script from the same folder or directory as the script. Otherwise, an error will come up, saying `FileNotFoundError: [Errno 2] No such file or directory: 'rickroll.txt'` or something along those lines.
